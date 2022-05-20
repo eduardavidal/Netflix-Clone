@@ -1,0 +1,156 @@
+:root {
+  --vermelho: rgb(229, 9, 20);
+  --preto: rgb(20, 20, 20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos principais */
+
+body {
+  background-color: var(--preto);
+  font-family: Arial;
+  color: #ffff;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  text-shadow: 0px 1px 4px rgb(161, 38, 38);
+  font-size: 30px;
+  font-family: "Arial";
+}
+header nav a {
+  font-family: Arial;
+  text-decoration: none;
+  color: #ffff;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #b3b3b3;
+}
+
+/* filme principal */
+
+.container {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 10px;
+}
+
+.destaque-principal {
+  font-size: 16px;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%),
+    url(/IMG/how-i-met-your-mother.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.destaque-principal .descricao {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.titulo {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ffff;
+  padding: 15px 20px;
+  margin-right: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  border-radius: 20px;
+}
+
+.botao:hover {
+  background-color: #ffff;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.destaque-principal .container {
+    width: 50%;
+}
+
+.box-series {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.carrossel-series {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carrossel-titulo {
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.carrossel-filmes {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-documentario {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.carrossel-documentarios {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Trebuchet MS';
+  margin-bottom: 1%;
+}
