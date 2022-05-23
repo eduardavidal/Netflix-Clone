@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+    
 
     <!--responsividade-->
     <link rel="stylesheet" href="/CSS/responsive.css">
 
     <!--owl css-->
     <link rel="stylesheet" href="/CSS/OWL/owl.carousel.min.css">
-    <link rel="stylesheet" href="/CSS/OWL/owl.theme.default.min.css">
-        <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="/CSS/OWL/owl.theme.default.min.css"> 
+
+    <title>NETFLIX CLONE</title>
+    
 </head>
 <body>
     <header>
@@ -38,7 +41,7 @@
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao" onclick="abrirInfo()">
+                    <button role="button" class="botao" onclick="abrir();">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -155,14 +158,91 @@
         </div>
     </div>
 
+    <div class="modal" id="more-info" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" onclick="fechar();">
+                   x
+                </button>
+                    <div class="modal-header">
+                        <h5 class="modal-title">MAIS INFORMAÇÕES</h5>
+                        
+                    </div>
+                    <div class="modal-body">
+                    
+                        <div class="carrossel-elenco">
+                            <h2 class="carrossel-titulo">ELENCO</h2>
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/jason.jpg" alt="Jason Segel">
+                                    <p class="card-text">Jason Segel</p>
+                                    <p class="card-textp">Como Marshall Eriksen</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/Alyson.jpg" alt="Alyson Hannigan">
+                                    <p class="card-text">Alyson Hannigan</p>
+                                    <p class="card-textp">Como Lily Aldrin</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/joshradnor.jpg" alt="Josh Radnor">
+                                    <p class="card-text">Josh Radnor</p>
+                                    <p class="card-textp">Como Ted Mosby</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/cobbie.jpg" alt="Cobie Smulders">
+                                    <p class="card-text">Cobie Smulders</p>
+                                    <p class="card-textp">Como Robin Scherbatsky</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/neil.jpg" alt="Neil Patrick Harris">
+                                    <p class="card-text">Neil Patrick Harris</p>
+                                    <p class="card-textp">Como Barney Stinson</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/cristin.jpg" alt="Cristin Milioti">
+                                    <p class="card-text">Cristin Milioti</p>
+                                    <p class="card-textp">Como Tracy McConnell</p>
+                                </div>
+                                <div class="item">
+                                    <img class="box-elenco" src="/IMG/elenco/bob.jpg" alt="Bob Saget">
+                                    <p class="card-text">Bob Saget</p>
+                                    <p class="card-textp">Narrador</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="list-group">
+                            <h2 class="titulo-informacoes"></h2>
+                            <br>                       
+                            <li class="list-group-item">TEMPORADAS: 9</li>
+                            <li class="list-group-item">CRIAÇÃO: Carter Bays, Craig Thomas</li>
+                            <li class="list-group-item">PRIMEIRO EPISÓDIO: 19 de setembro de 2005</li>
+                            <li class="list-group-item">ÚLTIMO EPISÓDIO: 31 de março de 2014</li>
+                            <li class="list-group-item">GÊNERO: Comédia</li>
+                            <li class="list-group-item">CLASSIFICAÇÃO: 12 anos</li>
+                        </ul>
+
+                    </div>
+
+                    
+                    </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://kit.fontawesome.com/78bd6da53c.js" crossorigin="anonymous"></script>
     <script src="/JS/OWL/jquery.min.js"></script>
     <script src="/JS/OWL/owl.carousel.min.js"></script>
     <script src="/JS/setup.js"></script>
-    <script src="/JS/functions.js"></script>
+    <script src="/JS/functions/abrir.js"></script>
+    <script src="/JS/functions/fechar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    
+      
 </body>
-<footer>
-    PROJETO<br>
-    GitHub</br>
-</footer>
 </html>
